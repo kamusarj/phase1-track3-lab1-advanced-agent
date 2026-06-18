@@ -1,0 +1,1682 @@
+[
+  {
+    "qid": "gen_001",
+    "difficulty": "hard",
+    "question": "Which document begins with 'We the People'?",
+    "gold_answer": "United States Constitution",
+    "context": [
+      {
+        "title": "We the People",
+        "text": "The U.S. Constitution begins with the phrase 'We the People'."
+      },
+      {
+        "title": "United States Constitution",
+        "text": "The U.S. Constitution was adopted in 1787."
+      }
+    ]
+  },
+  {
+    "qid": "gen_002",
+    "difficulty": "medium",
+    "question": "Which political ideology was founded by Karl Marx?",
+    "gold_answer": "Communism",
+    "context": [
+      {
+        "title": "Karl Marx",
+        "text": "Karl Marx's work laid the foundation for communism."
+      },
+      {
+        "title": "Communism",
+        "text": "Communism is a political and economic ideology."
+      }
+    ]
+  },
+  {
+    "qid": "gen_003",
+    "difficulty": "easy",
+    "question": "Which author created the character Harry Potter?",
+    "gold_answer": "J. K. Rowling",
+    "context": [
+      {
+        "title": "Harry Potter",
+        "text": "Harry Potter is a fictional character created by J. K. Rowling."
+      },
+      {
+        "title": "J. K. Rowling",
+        "text": "J. K. Rowling is a British author and philanthropist."
+      }
+    ]
+  },
+  {
+    "qid": "gen_004",
+    "difficulty": "easy",
+    "question": "Which scientist discovered penicillin?",
+    "gold_answer": "Alexander Fleming",
+    "context": [
+      {
+        "title": "Penicillin",
+        "text": "Penicillin was discovered by Alexander Fleming in 1928."
+      },
+      {
+        "title": "Alexander Fleming",
+        "text": "Alexander Fleming was a Scottish bacteriologist."
+      }
+    ]
+  },
+  {
+    "qid": "gen_005",
+    "difficulty": "easy",
+    "question": "Which band performed Bohemian Rhapsody?",
+    "gold_answer": "Queen",
+    "context": [
+      {
+        "title": "Bohemian Rhapsody",
+        "text": "Bohemian Rhapsody is a song by the British rock band Queen."
+      },
+      {
+        "title": "Queen (band)",
+        "text": "Queen is a British rock band formed in London in 1970."
+      }
+    ]
+  },
+  {
+    "qid": "gen_006",
+    "difficulty": "medium",
+    "question": "Which company developed the Python programming language?",
+    "gold_answer": "Guido van Rossum",
+    "context": [
+      {
+        "title": "Python (programming language)",
+        "text": "Python was created by Guido van Rossum."
+      },
+      {
+        "title": "Guido van Rossum",
+        "text": "Guido van Rossum is a Dutch programmer."
+      }
+    ]
+  },
+  {
+    "qid": "gen_007",
+    "difficulty": "medium",
+    "question": "What is the most abundant gas in Earth's atmosphere?",
+    "gold_answer": "Nitrogen",
+    "context": [
+      {
+        "title": "Earth's atmosphere",
+        "text": "Earth's atmosphere is composed mainly of nitrogen and oxygen."
+      },
+      {
+        "title": "Nitrogen",
+        "text": "Nitrogen makes up about 78% of Earth's atmosphere."
+      }
+    ]
+  },
+  {
+    "qid": "gen_008",
+    "difficulty": "medium",
+    "question": "Which civilization built Machu Picchu?",
+    "gold_answer": "Inca",
+    "context": [
+      {
+        "title": "Machu Picchu",
+        "text": "Machu Picchu was built by the Inca civilization in the 15th century."
+      },
+      {
+        "title": "Inca Empire",
+        "text": "The Inca Empire was a pre-Columbian empire in South America."
+      }
+    ]
+  },
+  {
+    "qid": "gen_009",
+    "difficulty": "easy",
+    "question": "Which company owns Instagram?",
+    "gold_answer": "Meta",
+    "context": [
+      {
+        "title": "Instagram",
+        "text": "Instagram is owned by Meta Platforms."
+      },
+      {
+        "title": "Meta Platforms",
+        "text": "Meta Platforms, Inc. is the parent company of Facebook, Instagram, and WhatsApp."
+      }
+    ]
+  },
+  {
+    "qid": "gen_010",
+    "difficulty": "easy",
+    "question": "Which planet is known as the Red Planet?",
+    "gold_answer": "Mars",
+    "context": [
+      {
+        "title": "Red Planet",
+        "text": "Mars is called the Red Planet due to its reddish appearance."
+      },
+      {
+        "title": "Mars",
+        "text": "Mars is the fourth planet from the Sun."
+      }
+    ]
+  },
+  {
+    "qid": "gen_011",
+    "difficulty": "hard",
+    "question": "Who founded Facebook?",
+    "gold_answer": "Mark Zuckerberg",
+    "context": [
+      {
+        "title": "Facebook",
+        "text": "Facebook was founded by Mark Zuckerberg in 2004."
+      },
+      {
+        "title": "Mark Zuckerberg",
+        "text": "Mark Zuckerberg is an American internet entrepreneur."
+      }
+    ]
+  },
+  {
+    "qid": "gen_012",
+    "difficulty": "hard",
+    "question": "Who was the first female Prime Minister of the United Kingdom?",
+    "gold_answer": "Margaret Thatcher",
+    "context": [
+      {
+        "title": "Prime Minister of the United Kingdom",
+        "text": "The first female PM of the UK was Margaret Thatcher."
+      },
+      {
+        "title": "Margaret Thatcher",
+        "text": "Margaret Thatcher served as PM from 1979 to 1990."
+      }
+    ]
+  },
+  {
+    "qid": "gen_013",
+    "difficulty": "medium",
+    "question": "Who was the first emperor of China?",
+    "gold_answer": "Qin Shi Huang",
+    "context": [
+      {
+        "title": "First Emperor of China",
+        "text": "Qin Shi Huang was the first emperor of a unified China in 221 BC."
+      },
+      {
+        "title": "Qin Shi Huang",
+        "text": "Qin Shi Huang founded the Qin dynasty."
+      }
+    ]
+  },
+  {
+    "qid": "gen_014",
+    "difficulty": "easy",
+    "question": "Which country has the largest population in the world?",
+    "gold_answer": "India",
+    "context": [
+      {
+        "title": "World population",
+        "text": "As of 2023, India has surpassed China as the world's most populous country."
+      },
+      {
+        "title": "India",
+        "text": "India is the most populous country in the world with over 1.4 billion people."
+      }
+    ]
+  },
+  {
+    "qid": "gen_015",
+    "difficulty": "hard",
+    "question": "Who was the president of the United States during the Cuban Missile Crisis?",
+    "gold_answer": "John F. Kennedy",
+    "context": [
+      {
+        "title": "Cuban Missile Crisis",
+        "text": "The Cuban Missile Crisis occurred in 1962 during the presidency of John F. Kennedy."
+      },
+      {
+        "title": "John F. Kennedy",
+        "text": "John F. Kennedy was the 35th President of the United States."
+      }
+    ]
+  },
+  {
+    "qid": "gen_016",
+    "difficulty": "medium",
+    "question": "What particle is exchanged in the electromagnetic force?",
+    "gold_answer": "Photon",
+    "context": [
+      {
+        "title": "Electromagnetic force",
+        "text": "The photon is the force carrier of the electromagnetic force."
+      },
+      {
+        "title": "Photon",
+        "text": "A photon is a quantum of light and the force carrier for electromagnetism."
+      }
+    ]
+  },
+  {
+    "qid": "gen_017",
+    "difficulty": "medium",
+    "question": "What does CPU stand for?",
+    "gold_answer": "Central Processing Unit",
+    "context": [
+      {
+        "title": "CPU",
+        "text": "CPU stands for Central Processing Unit."
+      },
+      {
+        "title": "Computer hardware",
+        "text": "The CPU is the primary component of a computer that executes instructions."
+      }
+    ]
+  },
+  {
+    "qid": "gen_018",
+    "difficulty": "hard",
+    "question": "What is the most common blood type worldwide?",
+    "gold_answer": "O positive",
+    "context": [
+      {
+        "title": "Blood type distribution",
+        "text": "O positive is the most common blood type globally."
+      },
+      {
+        "title": "Blood types",
+        "text": "Blood type frequencies vary by population."
+      }
+    ]
+  },
+  {
+    "qid": "gen_019",
+    "difficulty": "medium",
+    "question": "What ocean borders the country where the kangaroo is native?",
+    "gold_answer": "Indian Ocean",
+    "context": [
+      {
+        "title": "Kangaroo",
+        "text": "Kangaroos are native to Australia."
+      },
+      {
+        "title": "Australia",
+        "text": "Australia is bordered by the Indian Ocean to the west."
+      }
+    ]
+  },
+  {
+    "qid": "gen_020",
+    "difficulty": "easy",
+    "question": "What mountain range separates Europe from Asia in the country whose capital is Moscow?",
+    "gold_answer": "Ural Mountains",
+    "context": [
+      {
+        "title": "Moscow",
+        "text": "Moscow is the capital of Russia."
+      },
+      {
+        "title": "Russia",
+        "text": "The Ural Mountains separate European Russia from Asian Russia."
+      }
+    ]
+  },
+  {
+    "qid": "gen_021",
+    "difficulty": "medium",
+    "question": "What does HTTP stand for?",
+    "gold_answer": "HyperText Transfer Protocol",
+    "context": [
+      {
+        "title": "HTTP",
+        "text": "HTTP stands for HyperText Transfer Protocol."
+      },
+      {
+        "title": "Web protocols",
+        "text": "HTTP is the foundation of data communication on the World Wide Web."
+      }
+    ]
+  },
+  {
+    "qid": "gen_022",
+    "difficulty": "easy",
+    "question": "Which composer wrote the Ninth Symphony?",
+    "gold_answer": "Ludwig van Beethoven",
+    "context": [
+      {
+        "title": "Ninth Symphony",
+        "text": "The Ninth Symphony was composed by Ludwig van Beethoven."
+      },
+      {
+        "title": "Ludwig van Beethoven",
+        "text": "Beethoven was a German composer and pianist."
+      }
+    ]
+  },
+  {
+    "qid": "gen_023",
+    "difficulty": "easy",
+    "question": "Who is the CEO of Tesla (as of 2024)?",
+    "gold_answer": "Elon Musk",
+    "context": [
+      {
+        "title": "Tesla, Inc.",
+        "text": "Elon Musk is the CEO of Tesla."
+      },
+      {
+        "title": "Elon Musk",
+        "text": "Elon Musk is a business magnate and investor."
+      }
+    ]
+  },
+  {
+    "qid": "gen_024",
+    "difficulty": "hard",
+    "question": "Who is the creator of the manga One Piece?",
+    "gold_answer": "Eiichiro Oda",
+    "context": [
+      {
+        "title": "One Piece",
+        "text": "One Piece is a Japanese manga series written and illustrated by Eiichiro Oda."
+      },
+      {
+        "title": "Eiichiro Oda",
+        "text": "Eiichiro Oda is a Japanese manga artist."
+      }
+    ]
+  },
+  {
+    "qid": "gen_025",
+    "difficulty": "hard",
+    "question": "Which hormone regulates blood sugar levels?",
+    "gold_answer": "Insulin",
+    "context": [
+      {
+        "title": "Insulin",
+        "text": "Insulin is the hormone that regulates blood glucose levels."
+      },
+      {
+        "title": "Diabetes",
+        "text": "Lack of insulin production leads to Type 1 diabetes."
+      }
+    ]
+  },
+  {
+    "qid": "gen_026",
+    "difficulty": "hard",
+    "question": "Which company created the iPhone?",
+    "gold_answer": "Apple",
+    "context": [
+      {
+        "title": "iPhone",
+        "text": "The iPhone was created and is sold by Apple Inc."
+      },
+      {
+        "title": "Apple Inc.",
+        "text": "Apple Inc. is an American technology company."
+      }
+    ]
+  },
+  {
+    "qid": "gen_027",
+    "difficulty": "medium",
+    "question": "Which ocean borders the country whose capital is Lima?",
+    "gold_answer": "Pacific Ocean",
+    "context": [
+      {
+        "title": "Lima",
+        "text": "Lima is the capital city of Peru."
+      },
+      {
+        "title": "Peru",
+        "text": "Peru borders the Pacific Ocean."
+      }
+    ]
+  },
+  {
+    "qid": "gen_028",
+    "difficulty": "hard",
+    "question": "Who composed The Four Seasons?",
+    "gold_answer": "Antonio Vivaldi",
+    "context": [
+      {
+        "title": "The Four Seasons",
+        "text": "The Four Seasons is a group of violin concertos by Antonio Vivaldi."
+      },
+      {
+        "title": "Antonio Vivaldi",
+        "text": "Antonio Vivaldi was an Italian Baroque composer."
+      }
+    ]
+  },
+  {
+    "qid": "gen_029",
+    "difficulty": "hard",
+    "question": "Which Greek philosopher taught Alexander the Great?",
+    "gold_answer": "Aristotle",
+    "context": [
+      {
+        "title": "Alexander the Great",
+        "text": "Alexander the Great was tutored by Aristotle as a youth."
+      },
+      {
+        "title": "Aristotle",
+        "text": "Aristotle was a Greek philosopher and polymath."
+      }
+    ]
+  },
+  {
+    "qid": "gen_030",
+    "difficulty": "medium",
+    "question": "Which Shakespeare play features the character Hamlet?",
+    "gold_answer": "Hamlet",
+    "context": [
+      {
+        "title": "Hamlet (character)",
+        "text": "Hamlet is the protagonist of Shakespeare's play Hamlet."
+      },
+      {
+        "title": "Hamlet (play)",
+        "text": "Hamlet is one of Shakespeare's most famous tragedies."
+      }
+    ]
+  },
+  {
+    "qid": "gen_031",
+    "difficulty": "hard",
+    "question": "Which planet has the most moons?",
+    "gold_answer": "Saturn",
+    "context": [
+      {
+        "title": "Moons in solar system",
+        "text": "As of recent counts, Saturn has overtaken Jupiter in the number of known moons."
+      },
+      {
+        "title": "Saturn",
+        "text": "Saturn has 146 confirmed moons, the most of any planet."
+      }
+    ]
+  },
+  {
+    "qid": "gen_032",
+    "difficulty": "medium",
+    "question": "Which ancient wonder was located in the city of Alexandria?",
+    "gold_answer": "Lighthouse of Alexandria",
+    "context": [
+      {
+        "title": "Alexandria",
+        "text": "Alexandria was a major city of ancient Egypt."
+      },
+      {
+        "title": "Seven Wonders",
+        "text": "The Lighthouse of Alexandria was one of the Seven Wonders of the Ancient World, located in Alexandria."
+      }
+    ]
+  },
+  {
+    "qid": "gen_033",
+    "difficulty": "medium",
+    "question": "Who painted the ceiling of the Sistine Chapel?",
+    "gold_answer": "Michelangelo",
+    "context": [
+      {
+        "title": "Sistine Chapel",
+        "text": "The Sistine Chapel ceiling was painted by Michelangelo between 1508 and 1512."
+      },
+      {
+        "title": "Michelangelo",
+        "text": "Michelangelo was an Italian Renaissance artist."
+      }
+    ]
+  },
+  {
+    "qid": "gen_034",
+    "difficulty": "easy",
+    "question": "Which country won the first FIFA World Cup?",
+    "gold_answer": "Uruguay",
+    "context": [
+      {
+        "title": "FIFA World Cup",
+        "text": "The first FIFA World Cup was held in 1930."
+      },
+      {
+        "title": "1930 FIFA World Cup",
+        "text": "Uruguay won the first FIFA World Cup in 1930, hosted in their own country."
+      }
+    ]
+  },
+  {
+    "qid": "gen_035",
+    "difficulty": "easy",
+    "question": "Which technology company is headquartered in Cupertino, California?",
+    "gold_answer": "Apple",
+    "context": [
+      {
+        "title": "Apple Park",
+        "text": "Apple's headquarters, Apple Park, is in Cupertino, California."
+      },
+      {
+        "title": "Apple Inc.",
+        "text": "Apple Inc. is an American multinational technology company."
+      }
+    ]
+  },
+  {
+    "qid": "gen_036",
+    "difficulty": "hard",
+    "question": "Which desert is in the country whose capital is Cairo?",
+    "gold_answer": "Sahara",
+    "context": [
+      {
+        "title": "Cairo",
+        "text": "Cairo is the capital of Egypt."
+      },
+      {
+        "title": "Egypt",
+        "text": "The Sahara Desert covers most of Egypt."
+      }
+    ]
+  },
+  {
+    "qid": "gen_037",
+    "difficulty": "medium",
+    "question": "Who developed the laws of motion and universal gravitation?",
+    "gold_answer": "Isaac Newton",
+    "context": [
+      {
+        "title": "Laws of motion",
+        "text": "Isaac Newton formulated the three laws of motion."
+      },
+      {
+        "title": "Universal gravitation",
+        "text": "Newton also developed the law of universal gravitation."
+      }
+    ]
+  },
+  {
+    "qid": "gen_038",
+    "difficulty": "easy",
+    "question": "Which blood type is known as the universal donor?",
+    "gold_answer": "O negative",
+    "context": [
+      {
+        "title": "Blood types",
+        "text": "O negative blood is considered the universal donor type."
+      },
+      {
+        "title": "Blood transfusion",
+        "text": "O negative blood can be transfused to patients of any blood type."
+      }
+    ]
+  },
+  {
+    "qid": "gen_039",
+    "difficulty": "easy",
+    "question": "What sea borders the country where Petra is located?",
+    "gold_answer": "Dead Sea",
+    "context": [
+      {
+        "title": "Petra",
+        "text": "Petra is a historical city in Jordan."
+      },
+      {
+        "title": "Jordan",
+        "text": "Jordan borders the Dead Sea to the west."
+      }
+    ]
+  },
+  {
+    "qid": "gen_040",
+    "difficulty": "easy",
+    "question": "Which empire was ruled by Julius Caesar?",
+    "gold_answer": "Roman Empire",
+    "context": [
+      {
+        "title": "Julius Caesar",
+        "text": "Julius Caesar was a Roman general and statesman."
+      },
+      {
+        "title": "Roman Empire",
+        "text": "Julius Caesar played a critical role in the rise of the Roman Empire."
+      }
+    ]
+  },
+  {
+    "qid": "gen_041",
+    "difficulty": "easy",
+    "question": "Who wrote the novel 1984?",
+    "gold_answer": "George Orwell",
+    "context": [
+      {
+        "title": "1984",
+        "text": "1984 is a dystopian novel by George Orwell."
+      },
+      {
+        "title": "George Orwell",
+        "text": "George Orwell was the pen name of Eric Arthur Blair."
+      }
+    ]
+  },
+  {
+    "qid": "gen_042",
+    "difficulty": "hard",
+    "question": "Who wrote The Lord of the Rings?",
+    "gold_answer": "J. R. R. Tolkien",
+    "context": [
+      {
+        "title": "The Lord of the Rings",
+        "text": "The Lord of the Rings was written by J. R. R. Tolkien."
+      },
+      {
+        "title": "J. R. R. Tolkien",
+        "text": "J. R. R. Tolkien was an English writer and philologist."
+      }
+    ]
+  },
+  {
+    "qid": "gen_043",
+    "difficulty": "easy",
+    "question": "Who was the British Prime Minister during World War II?",
+    "gold_answer": "Winston Churchill",
+    "context": [
+      {
+        "title": "World War II",
+        "text": "Winston Churchill served as British Prime Minister during most of World War II."
+      },
+      {
+        "title": "Winston Churchill",
+        "text": "Winston Churchill was a British statesman and orator."
+      }
+    ]
+  },
+  {
+    "qid": "gen_044",
+    "difficulty": "hard",
+    "question": "Who directed the movie Titanic?",
+    "gold_answer": "James Cameron",
+    "context": [
+      {
+        "title": "Titanic (1997 film)",
+        "text": "Titanic was directed by James Cameron and released in 1997."
+      },
+      {
+        "title": "James Cameron",
+        "text": "James Cameron is a Canadian filmmaker."
+      }
+    ]
+  },
+  {
+    "qid": "gen_045",
+    "difficulty": "medium",
+    "question": "Who wrote the Communist Manifesto with Friedrich Engels?",
+    "gold_answer": "Karl Marx",
+    "context": [
+      {
+        "title": "Friedrich Engels",
+        "text": "Friedrich Engels co-authored The Communist Manifesto with Karl Marx."
+      },
+      {
+        "title": "Karl Marx",
+        "text": "Karl Marx was a German philosopher and economist."
+      }
+    ]
+  },
+  {
+    "qid": "gen_046",
+    "difficulty": "hard",
+    "question": "Which mountain is the highest in the country containing the Atacama Desert?",
+    "gold_answer": "Ojos del Salado",
+    "context": [
+      {
+        "title": "Atacama Desert",
+        "text": "The Atacama Desert is located in Chile."
+      },
+      {
+        "title": "Chile",
+        "text": "The highest mountain in Chile is Ojos del Salado."
+      }
+    ]
+  },
+  {
+    "qid": "gen_047",
+    "difficulty": "easy",
+    "question": "What sea borders the country whose capital is Athens?",
+    "gold_answer": "Aegean Sea",
+    "context": [
+      {
+        "title": "Athens",
+        "text": "Athens is the capital of Greece."
+      },
+      {
+        "title": "Greece",
+        "text": "Greece is bordered by the Aegean Sea."
+      }
+    ]
+  },
+  {
+    "qid": "gen_048",
+    "difficulty": "medium",
+    "question": "Who wrote the song 'Imagine'?",
+    "gold_answer": "John Lennon",
+    "context": [
+      {
+        "title": "Imagine (song)",
+        "text": "Imagine is a song by John Lennon, released in 1971."
+      },
+      {
+        "title": "John Lennon",
+        "text": "John Lennon was an English singer and member of The Beatles."
+      }
+    ]
+  },
+  {
+    "qid": "gen_049",
+    "difficulty": "medium",
+    "question": "Who is the current (2024) monarch of the United Kingdom?",
+    "gold_answer": "Charles III",
+    "context": [
+      {
+        "title": "Monarch of the United Kingdom",
+        "text": "Charles III became king in September 2022."
+      },
+      {
+        "title": "Charles III",
+        "text": "Charles III is the current King of the United Kingdom."
+      }
+    ]
+  },
+  {
+    "qid": "gen_050",
+    "difficulty": "hard",
+    "question": "Who discovered the structure of DNA?",
+    "gold_answer": "James Watson and Francis Crick",
+    "context": [
+      {
+        "title": "DNA structure",
+        "text": "The double helix structure of DNA was described by Watson and Crick in 1953."
+      },
+      {
+        "title": "James Watson and Francis Crick",
+        "text": "Watson and Crick were awarded the Nobel Prize for their work."
+      }
+    ]
+  },
+  {
+    "qid": "gen_051",
+    "difficulty": "medium",
+    "question": "Which strait separates the country whose capital is Ankara from Europe?",
+    "gold_answer": "Bosphorus",
+    "context": [
+      {
+        "title": "Ankara",
+        "text": "Ankara is the capital of Turkey."
+      },
+      {
+        "title": "Turkey",
+        "text": "The Bosphorus Strait separates Turkey's European part from its Asian part."
+      }
+    ]
+  },
+  {
+    "qid": "gen_052",
+    "difficulty": "hard",
+    "question": "Who is the Secretary-General of the United Nations (as of 2024)?",
+    "gold_answer": "Ant\u00f3nio Guterres",
+    "context": [
+      {
+        "title": "United Nations",
+        "text": "Ant\u00f3nio Guterres is the current Secretary-General of the UN."
+      },
+      {
+        "title": "Ant\u00f3nio Guterres",
+        "text": "Ant\u00f3nio Guterres is a Portuguese politician and diplomat."
+      }
+    ]
+  },
+  {
+    "qid": "gen_053",
+    "difficulty": "medium",
+    "question": "Which European explorer reached the Americas in 1492?",
+    "gold_answer": "Christopher Columbus",
+    "context": [
+      {
+        "title": "1492",
+        "text": "In 1492, Christopher Columbus made his first voyage to the Americas."
+      },
+      {
+        "title": "Christopher Columbus",
+        "text": "Christopher Columbus was an Italian explorer."
+      }
+    ]
+  },
+  {
+    "qid": "gen_054",
+    "difficulty": "hard",
+    "question": "Which search engine was developed by Google founders at Stanford?",
+    "gold_answer": "Google",
+    "context": [
+      {
+        "title": "Google",
+        "text": "Google was developed by Larry Page and Sergey Brin at Stanford."
+      },
+      {
+        "title": "Larry Page and Sergey Brin",
+        "text": "Page and Brin founded Google in 1998."
+      }
+    ]
+  },
+  {
+    "qid": "gen_055",
+    "difficulty": "easy",
+    "question": "Who sculpted the statue of David?",
+    "gold_answer": "Michelangelo",
+    "context": [
+      {
+        "title": "David (statue)",
+        "text": "The statue of David was created by Michelangelo between 1501 and 1504."
+      },
+      {
+        "title": "Michelangelo",
+        "text": "Michelangelo was an Italian Renaissance artist."
+      }
+    ]
+  },
+  {
+    "qid": "gen_056",
+    "difficulty": "hard",
+    "question": "What is the largest lake in the country whose capital is Moscow?",
+    "gold_answer": "Lake Baikal",
+    "context": [
+      {
+        "title": "Moscow",
+        "text": "Moscow is the capital of Russia."
+      },
+      {
+        "title": "Russia",
+        "text": "Lake Baikal is the largest freshwater lake in Russia."
+      }
+    ]
+  },
+  {
+    "qid": "gen_057",
+    "difficulty": "hard",
+    "question": "Which country has the world's largest democracy by population?",
+    "gold_answer": "India",
+    "context": [
+      {
+        "title": "Largest democracy",
+        "text": "India is often called the world's largest democracy."
+      },
+      {
+        "title": "India",
+        "text": "India has over 1.4 billion people and a parliamentary democracy."
+      }
+    ]
+  },
+  {
+    "qid": "gen_058",
+    "difficulty": "easy",
+    "question": "Who founded Microsoft?",
+    "gold_answer": "Bill Gates",
+    "context": [
+      {
+        "title": "Microsoft",
+        "text": "Microsoft was founded by Bill Gates and Paul Allen in 1975."
+      },
+      {
+        "title": "Bill Gates",
+        "text": "Bill Gates is an American businessman and philanthropist."
+      }
+    ]
+  },
+  {
+    "qid": "gen_059",
+    "difficulty": "hard",
+    "question": "What river flows through the city where Ada Lovelace was born?",
+    "gold_answer": "River Thames",
+    "context": [
+      {
+        "title": "Ada Lovelace",
+        "text": "Ada Lovelace was born in London, England."
+      },
+      {
+        "title": "London",
+        "text": "London is crossed by the River Thames."
+      }
+    ]
+  },
+  {
+    "qid": "gen_060",
+    "difficulty": "hard",
+    "question": "Who was the first president of the United States?",
+    "gold_answer": "George Washington",
+    "context": [
+      {
+        "title": "President of the United States",
+        "text": "The first President of the United States was George Washington."
+      },
+      {
+        "title": "George Washington",
+        "text": "George Washington served as the first U.S. president from 1789 to 1797."
+      }
+    ]
+  },
+  {
+    "qid": "gen_061",
+    "difficulty": "medium",
+    "question": "Which country hosted the 2008 Summer Olympics?",
+    "gold_answer": "China",
+    "context": [
+      {
+        "title": "2008 Summer Olympics",
+        "text": "The 2008 Summer Olympics were held in Beijing, China."
+      },
+      {
+        "title": "Beijing",
+        "text": "Beijing is the capital of China."
+      }
+    ]
+  },
+  {
+    "qid": "gen_062",
+    "difficulty": "hard",
+    "question": "What is the powerhouse of the cell?",
+    "gold_answer": "Mitochondria",
+    "context": [
+      {
+        "title": "Mitochondria",
+        "text": "Mitochondria are known as the powerhouse of the cell."
+      },
+      {
+        "title": "Cell biology",
+        "text": "Mitochondria generate most of the cell's supply of ATP."
+      }
+    ]
+  },
+  {
+    "qid": "gen_063",
+    "difficulty": "medium",
+    "question": "Who painted the Mona Lisa?",
+    "gold_answer": "Leonardo da Vinci",
+    "context": [
+      {
+        "title": "Mona Lisa",
+        "text": "The Mona Lisa was painted by Leonardo da Vinci in the early 16th century."
+      },
+      {
+        "title": "Leonardo da Vinci",
+        "text": "Leonardo da Vinci was an Italian Renaissance polymath."
+      }
+    ]
+  },
+  {
+    "qid": "gen_064",
+    "difficulty": "easy",
+    "question": "Who is the current (2024) president of France?",
+    "gold_answer": "Emmanuel Macron",
+    "context": [
+      {
+        "title": "President of France",
+        "text": "The current president of France is Emmanuel Macron."
+      },
+      {
+        "title": "Emmanuel Macron",
+        "text": "Emmanuel Macron has served as President of France since 2017."
+      }
+    ]
+  },
+  {
+    "qid": "gen_065",
+    "difficulty": "medium",
+    "question": "Which vitamin is produced when skin is exposed to sunlight?",
+    "gold_answer": "Vitamin D",
+    "context": [
+      {
+        "title": "Vitamin D synthesis",
+        "text": "The skin produces Vitamin D when exposed to sunlight."
+      },
+      {
+        "title": "Vitamin D",
+        "text": "Vitamin D is essential for bone health."
+      }
+    ]
+  },
+  {
+    "qid": "gen_066",
+    "difficulty": "medium",
+    "question": "Which company developed the video game Minecraft?",
+    "gold_answer": "Mojang",
+    "context": [
+      {
+        "title": "Minecraft",
+        "text": "Minecraft was originally developed by Mojang Studios."
+      },
+      {
+        "title": "Mojang Studios",
+        "text": "Mojang Studios is a Swedish video game developer."
+      }
+    ]
+  },
+  {
+    "qid": "gen_067",
+    "difficulty": "easy",
+    "question": "What element has the atomic number 1?",
+    "gold_answer": "Hydrogen",
+    "context": [
+      {
+        "title": "Atomic number",
+        "text": "An element's atomic number equals the number of protons in its nucleus."
+      },
+      {
+        "title": "Hydrogen",
+        "text": "Hydrogen has one proton, giving it atomic number 1."
+      }
+    ]
+  },
+  {
+    "qid": "gen_068",
+    "difficulty": "medium",
+    "question": "Which company created the Android operating system?",
+    "gold_answer": "Google",
+    "context": [
+      {
+        "title": "Android (operating system)",
+        "text": "Android was developed by Android Inc. and acquired by Google in 2005."
+      },
+      {
+        "title": "Google",
+        "text": "Google further developed Android into the most widely used mobile OS."
+      }
+    ]
+  },
+  {
+    "qid": "gen_069",
+    "difficulty": "easy",
+    "question": "Which political party does Joe Biden belong to?",
+    "gold_answer": "Democratic Party",
+    "context": [
+      {
+        "title": "Joe Biden",
+        "text": "Joe Biden is a member of the Democratic Party."
+      },
+      {
+        "title": "Democratic Party (United States)",
+        "text": "The Democratic Party is one of the two major parties in the U.S."
+      }
+    ]
+  },
+  {
+    "qid": "gen_070",
+    "difficulty": "hard",
+    "question": "What is the chemical symbol for gold?",
+    "gold_answer": "Au",
+    "context": [
+      {
+        "title": "Gold",
+        "text": "Gold is a chemical element with the symbol Au."
+      },
+      {
+        "title": "Chemical symbols",
+        "text": "Au comes from the Latin word for gold, 'aurum'."
+      }
+    ]
+  },
+  {
+    "qid": "gen_071",
+    "difficulty": "hard",
+    "question": "What gas do plants absorb from the atmosphere for photosynthesis?",
+    "gold_answer": "Carbon dioxide",
+    "context": [
+      {
+        "title": "Photosynthesis",
+        "text": "Plants use photosynthesis to convert light into energy."
+      },
+      {
+        "title": "Photosynthesis inputs",
+        "text": "Plants absorb carbon dioxide and release oxygen during photosynthesis."
+      }
+    ]
+  },
+  {
+    "qid": "gen_072",
+    "difficulty": "medium",
+    "question": "What is the largest organ in the human body?",
+    "gold_answer": "Skin",
+    "context": [
+      {
+        "title": "Human organs",
+        "text": "The skin is the largest organ of the human body."
+      },
+      {
+        "title": "Skin",
+        "text": "The skin protects the body and has a surface area of about 2 square meters."
+      }
+    ]
+  },
+  {
+    "qid": "gen_073",
+    "difficulty": "hard",
+    "question": "Which part of the brain is responsible for balance?",
+    "gold_answer": "Cerebellum",
+    "context": [
+      {
+        "title": "Cerebellum",
+        "text": "The cerebellum controls balance and coordination."
+      },
+      {
+        "title": "Human brain",
+        "text": "The human brain has several distinct regions with different functions."
+      }
+    ]
+  },
+  {
+    "qid": "gen_074",
+    "difficulty": "easy",
+    "question": "What river runs through the capital of France?",
+    "gold_answer": "Seine",
+    "context": [
+      {
+        "title": "France",
+        "text": "The capital of France is Paris."
+      },
+      {
+        "title": "Paris",
+        "text": "The River Seine flows through Paris."
+      }
+    ]
+  },
+  {
+    "qid": "gen_075",
+    "difficulty": "hard",
+    "question": "Who is the lead singer of the band U2?",
+    "gold_answer": "Bono",
+    "context": [
+      {
+        "title": "U2",
+        "text": "U2 is an Irish rock band formed in Dublin in 1976."
+      },
+      {
+        "title": "Bono",
+        "text": "Bono, born Paul David Hewson, is the lead vocalist of U2."
+      }
+    ]
+  },
+  {
+    "qid": "gen_076",
+    "difficulty": "easy",
+    "question": "Which river flows through the city where the Eiffel Tower is located?",
+    "gold_answer": "Seine",
+    "context": [
+      {
+        "title": "Eiffel Tower",
+        "text": "The Eiffel Tower is located in Paris, France."
+      },
+      {
+        "title": "Paris",
+        "text": "The River Seine flows through Paris."
+      }
+    ]
+  },
+  {
+    "qid": "gen_077",
+    "difficulty": "hard",
+    "question": "Who founded Amazon?",
+    "gold_answer": "Jeff Bezos",
+    "context": [
+      {
+        "title": "Amazon (company)",
+        "text": "Amazon was founded by Jeff Bezos in 1994."
+      },
+      {
+        "title": "Jeff Bezos",
+        "text": "Jeff Bezos is an American entrepreneur and the founder of Amazon."
+      }
+    ]
+  },
+  {
+    "qid": "gen_078",
+    "difficulty": "medium",
+    "question": "What sea lies east of the country whose capital is Rome?",
+    "gold_answer": "Adriatic Sea",
+    "context": [
+      {
+        "title": "Rome",
+        "text": "Rome is the capital of Italy."
+      },
+      {
+        "title": "Italy",
+        "text": "The Adriatic Sea lies to the east of Italy."
+      }
+    ]
+  },
+  {
+    "qid": "gen_079",
+    "difficulty": "hard",
+    "question": "In which year did the country whose capital is Berlin become reunified?",
+    "gold_answer": "1990",
+    "context": [
+      {
+        "title": "Berlin",
+        "text": "Berlin is the capital of Germany."
+      },
+      {
+        "title": "German Reunification",
+        "text": "Germany was officially reunified on October 3, 1990."
+      }
+    ]
+  },
+  {
+    "qid": "gen_080",
+    "difficulty": "hard",
+    "question": "Who proposed the theory of general relativity?",
+    "gold_answer": "Albert Einstein",
+    "context": [
+      {
+        "title": "General relativity",
+        "text": "The theory of general relativity was proposed by Albert Einstein in 1915."
+      },
+      {
+        "title": "Albert Einstein",
+        "text": "Albert Einstein was a German-born theoretical physicist."
+      }
+    ]
+  },
+  {
+    "qid": "gen_081",
+    "difficulty": "hard",
+    "question": "What is the speed of light in a vacuum?",
+    "gold_answer": "299792458 meters per second",
+    "context": [
+      {
+        "title": "Speed of light",
+        "text": "The speed of light in a vacuum is a universal constant."
+      },
+      {
+        "title": "Physics constants",
+        "text": "The exact speed of light is 299,792,458 meters per second."
+      }
+    ]
+  },
+  {
+    "qid": "gen_082",
+    "difficulty": "easy",
+    "question": "Who wrote the play Romeo and Juliet?",
+    "gold_answer": "William Shakespeare",
+    "context": [
+      {
+        "title": "Romeo and Juliet",
+        "text": "Romeo and Juliet is a tragedy written by William Shakespeare."
+      },
+      {
+        "title": "William Shakespeare",
+        "text": "William Shakespeare was an English playwright and poet."
+      }
+    ]
+  },
+  {
+    "qid": "gen_083",
+    "difficulty": "easy",
+    "question": "Which mountain range contains the highest mountain in the country whose capital is Kathmandu?",
+    "gold_answer": "Himalayas",
+    "context": [
+      {
+        "title": "Kathmandu",
+        "text": "Kathmandu is the capital city of Nepal."
+      },
+      {
+        "title": "Nepal",
+        "text": "Mount Everest, the highest mountain in Nepal, is part of the Himalayas."
+      }
+    ]
+  },
+  {
+    "qid": "gen_084",
+    "difficulty": "medium",
+    "question": "Which ocean is east of the country whose capital is Tokyo?",
+    "gold_answer": "Pacific Ocean",
+    "context": [
+      {
+        "title": "Tokyo",
+        "text": "Tokyo is the capital of Japan."
+      },
+      {
+        "title": "Japan",
+        "text": "Japan is bordered by the Pacific Ocean to the east."
+      }
+    ]
+  },
+  {
+    "qid": "gen_085",
+    "difficulty": "easy",
+    "question": "Who developed the first successful vaccine?",
+    "gold_answer": "Edward Jenner",
+    "context": [
+      {
+        "title": "Vaccine history",
+        "text": "Edward Jenner developed the first successful vaccine in 1796."
+      },
+      {
+        "title": "Edward Jenner",
+        "text": "Jenner created the smallpox vaccine."
+      }
+    ]
+  },
+  {
+    "qid": "gen_086",
+    "difficulty": "hard",
+    "question": "Which document begins with 'We the People'?",
+    "gold_answer": "United States Constitution",
+    "context": [
+      {
+        "title": "We the People",
+        "text": "The U.S. Constitution begins with the phrase 'We the People'."
+      },
+      {
+        "title": "United States Constitution",
+        "text": "The U.S. Constitution was adopted in 1787."
+      }
+    ]
+  },
+  {
+    "qid": "gen_087",
+    "difficulty": "medium",
+    "question": "Which political ideology was founded by Karl Marx?",
+    "gold_answer": "Communism",
+    "context": [
+      {
+        "title": "Karl Marx",
+        "text": "Karl Marx's work laid the foundation for communism."
+      },
+      {
+        "title": "Communism",
+        "text": "Communism is a political and economic ideology."
+      }
+    ]
+  },
+  {
+    "qid": "gen_088",
+    "difficulty": "easy",
+    "question": "Which author created the character Harry Potter?",
+    "gold_answer": "J. K. Rowling",
+    "context": [
+      {
+        "title": "Harry Potter",
+        "text": "Harry Potter is a fictional character created by J. K. Rowling."
+      },
+      {
+        "title": "J. K. Rowling",
+        "text": "J. K. Rowling is a British author and philanthropist."
+      }
+    ]
+  },
+  {
+    "qid": "gen_089",
+    "difficulty": "easy",
+    "question": "Which scientist discovered penicillin?",
+    "gold_answer": "Alexander Fleming",
+    "context": [
+      {
+        "title": "Penicillin",
+        "text": "Penicillin was discovered by Alexander Fleming in 1928."
+      },
+      {
+        "title": "Alexander Fleming",
+        "text": "Alexander Fleming was a Scottish bacteriologist."
+      }
+    ]
+  },
+  {
+    "qid": "gen_090",
+    "difficulty": "easy",
+    "question": "Which band performed Bohemian Rhapsody?",
+    "gold_answer": "Queen",
+    "context": [
+      {
+        "title": "Bohemian Rhapsody",
+        "text": "Bohemian Rhapsody is a song by the British rock band Queen."
+      },
+      {
+        "title": "Queen (band)",
+        "text": "Queen is a British rock band formed in London in 1970."
+      }
+    ]
+  },
+  {
+    "qid": "gen_091",
+    "difficulty": "medium",
+    "question": "Which company developed the Python programming language?",
+    "gold_answer": "Guido van Rossum",
+    "context": [
+      {
+        "title": "Python (programming language)",
+        "text": "Python was created by Guido van Rossum."
+      },
+      {
+        "title": "Guido van Rossum",
+        "text": "Guido van Rossum is a Dutch programmer."
+      }
+    ]
+  },
+  {
+    "qid": "gen_092",
+    "difficulty": "medium",
+    "question": "What is the most abundant gas in Earth's atmosphere?",
+    "gold_answer": "Nitrogen",
+    "context": [
+      {
+        "title": "Earth's atmosphere",
+        "text": "Earth's atmosphere is composed mainly of nitrogen and oxygen."
+      },
+      {
+        "title": "Nitrogen",
+        "text": "Nitrogen makes up about 78% of Earth's atmosphere."
+      }
+    ]
+  },
+  {
+    "qid": "gen_093",
+    "difficulty": "medium",
+    "question": "Which civilization built Machu Picchu?",
+    "gold_answer": "Inca",
+    "context": [
+      {
+        "title": "Machu Picchu",
+        "text": "Machu Picchu was built by the Inca civilization in the 15th century."
+      },
+      {
+        "title": "Inca Empire",
+        "text": "The Inca Empire was a pre-Columbian empire in South America."
+      }
+    ]
+  },
+  {
+    "qid": "gen_094",
+    "difficulty": "easy",
+    "question": "Which company owns Instagram?",
+    "gold_answer": "Meta",
+    "context": [
+      {
+        "title": "Instagram",
+        "text": "Instagram is owned by Meta Platforms."
+      },
+      {
+        "title": "Meta Platforms",
+        "text": "Meta Platforms, Inc. is the parent company of Facebook, Instagram, and WhatsApp."
+      }
+    ]
+  },
+  {
+    "qid": "gen_095",
+    "difficulty": "easy",
+    "question": "Which planet is known as the Red Planet?",
+    "gold_answer": "Mars",
+    "context": [
+      {
+        "title": "Red Planet",
+        "text": "Mars is called the Red Planet due to its reddish appearance."
+      },
+      {
+        "title": "Mars",
+        "text": "Mars is the fourth planet from the Sun."
+      }
+    ]
+  },
+  {
+    "qid": "gen_096",
+    "difficulty": "hard",
+    "question": "Who founded Facebook?",
+    "gold_answer": "Mark Zuckerberg",
+    "context": [
+      {
+        "title": "Facebook",
+        "text": "Facebook was founded by Mark Zuckerberg in 2004."
+      },
+      {
+        "title": "Mark Zuckerberg",
+        "text": "Mark Zuckerberg is an American internet entrepreneur."
+      }
+    ]
+  },
+  {
+    "qid": "gen_097",
+    "difficulty": "hard",
+    "question": "Who was the first female Prime Minister of the United Kingdom?",
+    "gold_answer": "Margaret Thatcher",
+    "context": [
+      {
+        "title": "Prime Minister of the United Kingdom",
+        "text": "The first female PM of the UK was Margaret Thatcher."
+      },
+      {
+        "title": "Margaret Thatcher",
+        "text": "Margaret Thatcher served as PM from 1979 to 1990."
+      }
+    ]
+  },
+  {
+    "qid": "gen_098",
+    "difficulty": "medium",
+    "question": "Who was the first emperor of China?",
+    "gold_answer": "Qin Shi Huang",
+    "context": [
+      {
+        "title": "First Emperor of China",
+        "text": "Qin Shi Huang was the first emperor of a unified China in 221 BC."
+      },
+      {
+        "title": "Qin Shi Huang",
+        "text": "Qin Shi Huang founded the Qin dynasty."
+      }
+    ]
+  },
+  {
+    "qid": "gen_099",
+    "difficulty": "easy",
+    "question": "Which country has the largest population in the world?",
+    "gold_answer": "India",
+    "context": [
+      {
+        "title": "World population",
+        "text": "As of 2023, India has surpassed China as the world's most populous country."
+      },
+      {
+        "title": "India",
+        "text": "India is the most populous country in the world with over 1.4 billion people."
+      }
+    ]
+  },
+  {
+    "qid": "gen_100",
+    "difficulty": "hard",
+    "question": "Who was the president of the United States during the Cuban Missile Crisis?",
+    "gold_answer": "John F. Kennedy",
+    "context": [
+      {
+        "title": "Cuban Missile Crisis",
+        "text": "The Cuban Missile Crisis occurred in 1962 during the presidency of John F. Kennedy."
+      },
+      {
+        "title": "John F. Kennedy",
+        "text": "John F. Kennedy was the 35th President of the United States."
+      }
+    ]
+  },
+  {
+    "qid": "gen_101",
+    "difficulty": "medium",
+    "question": "What particle is exchanged in the electromagnetic force?",
+    "gold_answer": "Photon",
+    "context": [
+      {
+        "title": "Electromagnetic force",
+        "text": "The photon is the force carrier of the electromagnetic force."
+      },
+      {
+        "title": "Photon",
+        "text": "A photon is a quantum of light and the force carrier for electromagnetism."
+      }
+    ]
+  },
+  {
+    "qid": "gen_102",
+    "difficulty": "medium",
+    "question": "What does CPU stand for?",
+    "gold_answer": "Central Processing Unit",
+    "context": [
+      {
+        "title": "CPU",
+        "text": "CPU stands for Central Processing Unit."
+      },
+      {
+        "title": "Computer hardware",
+        "text": "The CPU is the primary component of a computer that executes instructions."
+      }
+    ]
+  },
+  {
+    "qid": "gen_103",
+    "difficulty": "hard",
+    "question": "What is the most common blood type worldwide?",
+    "gold_answer": "O positive",
+    "context": [
+      {
+        "title": "Blood type distribution",
+        "text": "O positive is the most common blood type globally."
+      },
+      {
+        "title": "Blood types",
+        "text": "Blood type frequencies vary by population."
+      }
+    ]
+  },
+  {
+    "qid": "gen_104",
+    "difficulty": "medium",
+    "question": "What ocean borders the country where the kangaroo is native?",
+    "gold_answer": "Indian Ocean",
+    "context": [
+      {
+        "title": "Kangaroo",
+        "text": "Kangaroos are native to Australia."
+      },
+      {
+        "title": "Australia",
+        "text": "Australia is bordered by the Indian Ocean to the west."
+      }
+    ]
+  },
+  {
+    "qid": "gen_105",
+    "difficulty": "easy",
+    "question": "What mountain range separates Europe from Asia in the country whose capital is Moscow?",
+    "gold_answer": "Ural Mountains",
+    "context": [
+      {
+        "title": "Moscow",
+        "text": "Moscow is the capital of Russia."
+      },
+      {
+        "title": "Russia",
+        "text": "The Ural Mountains separate European Russia from Asian Russia."
+      }
+    ]
+  }
+]
