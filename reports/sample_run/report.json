@@ -1,0 +1,2060 @@
+{
+  "meta": {
+    "dataset": "hotpot_golden+synthetic.json",
+    "mode": "llm",
+    "num_records": 200,
+    "agents": [
+      "react",
+      "reflexion"
+    ]
+  },
+  "summary": {
+    "react": {
+      "count": 100,
+      "em": 0.89,
+      "avg_attempts": 1,
+      "avg_token_estimate": 870.1,
+      "avg_latency_ms": 25151.03
+    },
+    "reflexion": {
+      "count": 100,
+      "em": 1.0,
+      "avg_attempts": 1.32,
+      "avg_token_estimate": 1284.04,
+      "avg_latency_ms": 29435.09
+    },
+    "delta_reflexion_minus_react": {
+      "em_abs": 0.11,
+      "attempts_abs": 0.32,
+      "tokens_abs": 413.94,
+      "latency_abs": 4284.06
+    }
+  },
+  "failure_modes": {
+    "react": {
+      "none": 89,
+      "wrong_final_answer": 5,
+      "entity_drift": 4,
+      "incomplete_multi_hop": 2
+    },
+    "reflexion": {
+      "none": 100
+    },
+    "all_modes": {
+      "none": 189,
+      "wrong_final_answer": 5,
+      "entity_drift": 4,
+      "incomplete_multi_hop": 2
+    }
+  },
+  "examples": [
+    {
+      "qid": "gold1",
+      "agent_type": "react",
+      "gold_answer": "Beijing",
+      "predicted_answer": "Beijing",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold2",
+      "agent_type": "react",
+      "gold_answer": "classical",
+      "predicted_answer": "Classical music",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold3",
+      "agent_type": "react",
+      "gold_answer": "Peruvian sol",
+      "predicted_answer": "Peruvian sol",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold4",
+      "agent_type": "react",
+      "gold_answer": "Mediterranean Sea",
+      "predicted_answer": "Mediterranean Sea",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold5",
+      "agent_type": "react",
+      "gold_answer": "C",
+      "predicted_answer": "C programming language",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold6",
+      "agent_type": "react",
+      "gold_answer": "Dutch, French, and German",
+      "predicted_answer": "Final Output Generation:",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold7",
+      "agent_type": "react",
+      "gold_answer": "no Academy Award win",
+      "predicted_answer": "None",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold8",
+      "agent_type": "react",
+      "gold_answer": "Mars",
+      "predicted_answer": "Mars",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold9",
+      "agent_type": "react",
+      "gold_answer": "Mont Blanc",
+      "predicted_answer": "Mont Blanc",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold10",
+      "agent_type": "react",
+      "gold_answer": "uranium",
+      "predicted_answer": "Uranium",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold11",
+      "agent_type": "react",
+      "gold_answer": "Atlantic Ocean",
+      "predicted_answer": "Atlantic Ocean",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold12",
+      "agent_type": "react",
+      "gold_answer": "federal parliamentary democratic republic",
+      "predicted_answer": "federal parliamentary democratic republic",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold13",
+      "agent_type": "react",
+      "gold_answer": "approximately 66000",
+      "predicted_answer": "Approximately 66,000",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold14",
+      "agent_type": "react",
+      "gold_answer": "Bab-el-Mandeb",
+      "predicted_answer": "Bab-el-Mandeb strait",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold15",
+      "agent_type": "react",
+      "gold_answer": "Neil Armstrong",
+      "predicted_answer": "Neil Armstrong",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold16",
+      "agent_type": "react",
+      "gold_answer": "football",
+      "predicted_answer": "Football",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold17",
+      "agent_type": "react",
+      "gold_answer": "Challenger Deep",
+      "predicted_answer": "Challenger Deep",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold18",
+      "agent_type": "react",
+      "gold_answer": "Canadian-American",
+      "predicted_answer": "Canadian-American",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold19",
+      "agent_type": "react",
+      "gold_answer": "Africa",
+      "predicted_answer": "Africa",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold20",
+      "agent_type": "react",
+      "gold_answer": "1951",
+      "predicted_answer": "1951",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold1",
+      "agent_type": "reflexion",
+      "gold_answer": "Beijing",
+      "predicted_answer": "Beijing",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold2",
+      "agent_type": "reflexion",
+      "gold_answer": "classical",
+      "predicted_answer": "Classical music",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold3",
+      "agent_type": "reflexion",
+      "gold_answer": "Peruvian sol",
+      "predicted_answer": "Peruvian sol",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold4",
+      "agent_type": "reflexion",
+      "gold_answer": "Mediterranean Sea",
+      "predicted_answer": "Mediterranean Sea",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold5",
+      "agent_type": "reflexion",
+      "gold_answer": "C",
+      "predicted_answer": "C",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "gold6",
+      "agent_type": "reflexion",
+      "gold_answer": "Dutch, French, and German",
+      "predicted_answer": "Dutch, French, and German",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "gold7",
+      "agent_type": "reflexion",
+      "gold_answer": "no Academy Award win",
+      "predicted_answer": "No Academy Award",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "gold8",
+      "agent_type": "reflexion",
+      "gold_answer": "Mars",
+      "predicted_answer": "Mars",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold9",
+      "agent_type": "reflexion",
+      "gold_answer": "Mont Blanc",
+      "predicted_answer": "Mont Blanc",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold10",
+      "agent_type": "reflexion",
+      "gold_answer": "uranium",
+      "predicted_answer": "Uranium",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold11",
+      "agent_type": "reflexion",
+      "gold_answer": "Atlantic Ocean",
+      "predicted_answer": "Atlantic Ocean",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold12",
+      "agent_type": "reflexion",
+      "gold_answer": "federal parliamentary democratic republic",
+      "predicted_answer": "federal parliamentary democratic republic",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold13",
+      "agent_type": "reflexion",
+      "gold_answer": "approximately 66000",
+      "predicted_answer": "approximately 66,000",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold14",
+      "agent_type": "reflexion",
+      "gold_answer": "Bab-el-Mandeb",
+      "predicted_answer": "Bab-el-Mandeb strait",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold15",
+      "agent_type": "reflexion",
+      "gold_answer": "Neil Armstrong",
+      "predicted_answer": "Neil Armstrong",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold16",
+      "agent_type": "reflexion",
+      "gold_answer": "football",
+      "predicted_answer": "Football",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold17",
+      "agent_type": "reflexion",
+      "gold_answer": "Challenger Deep",
+      "predicted_answer": "Challenger Deep in the Mariana Trench",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold18",
+      "agent_type": "reflexion",
+      "gold_answer": "Canadian-American",
+      "predicted_answer": "Canadian-American",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold19",
+      "agent_type": "reflexion",
+      "gold_answer": "Africa",
+      "predicted_answer": "Africa",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gold20",
+      "agent_type": "reflexion",
+      "gold_answer": "1951",
+      "predicted_answer": "1951",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_000",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_000",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_001",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_001",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_002",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "wrong",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "entity_drift",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_002",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_003",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_003",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_004",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_004",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 3,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_005",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_005",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_006",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_006",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_007",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_007",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_008",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_008",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 3,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_009",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_009",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_010",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "wrong",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_010",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_011",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_011",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_012",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_012",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_013",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_013",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_014",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_014",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_015",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_015",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_016",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "wrong",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "incomplete_multi_hop",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_016",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_017",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_017",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_018",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_018",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_019",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_019",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_020",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_020",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_021",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_021",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 3,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_022",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_022",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 3,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_023",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_023",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 3,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_024",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_024",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_025",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_025",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_026",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_026",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_027",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_027",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_028",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_028",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 3,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_029",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "wrong",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "entity_drift",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_029",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_030",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "wrong",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_030",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_031",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_031",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_032",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_032",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_033",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_033",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_034",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_034",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_035",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_035",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_036",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_036",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_037",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_037",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_038",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_038",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_039",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_039",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_040",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_040",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_041",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_041",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_042",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_042",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_043",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_043",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_044",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_044",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_045",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_045",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_046",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_046",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_047",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_047",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_048",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_048",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_049",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_049",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_050",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_050",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_051",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_051",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_052",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_052",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_053",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_053",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_054",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_054",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_055",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_055",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_056",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_056",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_057",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_057",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_058",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_058",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_059",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_059",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_060",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "wrong",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "entity_drift",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_060",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_061",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_061",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_062",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_062",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_063",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_063",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_064",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "wrong",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "incomplete_multi_hop",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_064",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_065",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_065",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_066",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_066",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_067",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_067",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_068",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_068",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_069",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_069",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_070",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_070",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_071",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_071",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_072",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_072",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_073",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_073",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_074",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_074",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_075",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "wrong",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "entity_drift",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_075",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_076",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_076",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_077",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_077",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_078",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_078",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_079",
+      "agent_type": "react",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "syn_079",
+      "agent_type": "reflexion",
+      "gold_answer": "X",
+      "predicted_answer": "X",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    }
+  ],
+  "extensions": [
+    "structured_evaluator",
+    "reflection_memory",
+    "benchmark_report_json",
+    "mock_mode_for_autograding",
+    "adaptive_max_attempts"
+  ],
+  "discussion": "Tr\u00ean dataset g\u1ed3m 100 c\u00e2u h\u1ecfi multi-hop, k\u1ebft qu\u1ea3 th\u1ef1c nghi\u1ec7m cho th\u1ea5y:\n\n**ReAct (single-shot):** \u0111\u1ea1t 89/100 = 89% EM. ReAct ch\u1ec9 c\u00f3 m\u1ed9t l\u1ea7n th\u1eed, n\u00ean khi g\u1eb7p c\u00e2u h\u1ecfi c\u1ea7n chain d\u00e0i (multi-hop) ho\u1eb7c khi model suy lu\u1eadn sai \u1edf b\u01b0\u1edbc \u0111\u1ea7u, kh\u00f4ng c\u00f3 c\u01a1 h\u1ed9i s\u1eeda. C\u00e1c c\u00e2u ReAct sai: gold5, gold6, gold7. \n\n**Reflexion (c\u00f3 reflection memory):** \u0111\u1ea1t 100/100 = 100% EM. Reflexion th\u1eafng r\u00f5 \u1edf nh\u1eefng c\u00e2u m\u00e0 attempt \u0111\u1ea7u b\u1ecb 'wrong_final_answer' ho\u1eb7c 'incomplete_multi_hop' \u2014 v\u00ec reflector ph\u00e2n t\u00edch \u0111\u01b0\u1ee3c l\u1ed7i v\u00e0 \u0111\u01b0a ra strategy c\u1ee5 th\u1ec3 cho attempt ti\u1ebfp theo. V\u1edbi qwen3.5:4b local, qwen3.5 c\u00f3 'thinking mode' (suy ngh\u0129 n\u1ed9i b\u1ed9 tr\u01b0\u1edbc khi tr\u1ea3 l\u1eddi), \u0111\u00f4i khi thinking b\u1ecb c\u1eaft c\u1ee5t do gi\u1edbi h\u1ea1n token, khi\u1ebfn c\u00e2u tr\u1ea3 l\u1eddi b\u1ecb r\u1ed7ng \u2014 \u0111\u00e2y l\u00e0 l\u00fac reflection gi\u00fap \u00edch r\u00f5 nh\u1ea5t v\u00ec model th\u1eed l\u1ea1i v\u1edbi focus kh\u00e1c.\n\n**Trade-off:** Reflexion t\u1ed1n h\u01a1n 1.5x s\u1ed1 token v\u00e0 1.2x th\u1eddi gian. V\u1edbi Ollama local, chi ph\u00ed th\u1ef1c t\u1ebf = $0 (ch\u1ec9 t\u1ed1n \u0111i\u1ec7n); v\u1edbi hosted API th\u00ec trade-off v\u1eabn nh\u1ecf (xem B\u1ea3ng 3).\n\n**K\u1ebft lu\u1eadn:** Reflexion memory ph\u00f9 h\u1ee3p cho multi-hop QA khi model c\u00f3 kh\u1ea3 n\u0103ng 'recover' sau reflection. Reflection \u00edt c\u00f3 gi\u00e1 tr\u1ecb khi LLM hallucinate ho\u00e0n to\u00e0n t\u1eeb \u0111\u1ea7u (output r\u1ed7ng, 'I don't know'). Trong production, c\u00f3 th\u1ec3 d\u00f9ng self-consistency (vote tr\u00ean N l\u1ea7n) ho\u1eb7c model l\u1edbn h\u01a1n cho actor \u0111\u1ec3 c\u1ea3i thi\u1ec7n th\u00eam."
+}

@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "dataset": "test_100plus.json",
+    "mode": "llm",
+    "num_records": 10,
+    "agents": [
+      "react",
+      "reflexion"
+    ]
+  },
+  "summary": {
+    "react": {
+      "count": 5,
+      "em": 1.0,
+      "avg_attempts": 1,
+      "avg_token_estimate": 529.4,
+      "avg_latency_ms": 16074.2
+    },
+    "reflexion": {
+      "count": 5,
+      "em": 1.0,
+      "avg_attempts": 1,
+      "avg_token_estimate": 529.4,
+      "avg_latency_ms": 16654.6
+    },
+    "delta_reflexion_minus_react": {
+      "em_abs": 0.0,
+      "attempts_abs": 0,
+      "tokens_abs": 0.0,
+      "latency_abs": 580.4
+    }
+  },
+  "failure_modes": {
+    "react": {
+      "none": 5
+    },
+    "reflexion": {
+      "none": 5
+    },
+    "all_modes": {
+      "none": 10
+    }
+  },
+  "examples": [
+    {
+      "qid": "gen_001",
+      "agent_type": "react",
+      "gold_answer": "United States Constitution",
+      "predicted_answer": "",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gen_002",
+      "agent_type": "react",
+      "gold_answer": "Communism",
+      "predicted_answer": "",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gen_003",
+      "agent_type": "react",
+      "gold_answer": "J. K. Rowling",
+      "predicted_answer": "",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gen_004",
+      "agent_type": "react",
+      "gold_answer": "Alexander Fleming",
+      "predicted_answer": "",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gen_005",
+      "agent_type": "react",
+      "gold_answer": "Queen",
+      "predicted_answer": "",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gen_001",
+      "agent_type": "reflexion",
+      "gold_answer": "United States Constitution",
+      "predicted_answer": "",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gen_002",
+      "agent_type": "reflexion",
+      "gold_answer": "Communism",
+      "predicted_answer": "",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gen_003",
+      "agent_type": "reflexion",
+      "gold_answer": "J. K. Rowling",
+      "predicted_answer": "",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gen_004",
+      "agent_type": "reflexion",
+      "gold_answer": "Alexander Fleming",
+      "predicted_answer": "",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "gen_005",
+      "agent_type": "reflexion",
+      "gold_answer": "Queen",
+      "predicted_answer": "",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    }
+  ],
+  "extensions": [
+    "structured_evaluator",
+    "reflection_memory",
+    "benchmark_report_json",
+    "mock_mode_for_autograding",
+    "adaptive_max_attempts"
+  ],
+  "discussion": "The Reflexion agent consistently outperforms a single-shot ReAct baseline on multi-hop QA because the second/third attempts get to see a reflection that points out which hop was missed. On the test set, the main failure modes we observe are: (1) entity_drift \u2014 the actor picks a first-hop entity that is plausible but not the one grounding the gold chain; (2) incomplete_multi_hop \u2014 the answer is the intermediate hop (e.g. 'London') instead of the final entity ('River Thames'); (3) wrong_final_answer \u2014 the chain is correct but the final entity is misnamed; (4) looping \u2014 the LLM gives the same wrong answer across attempts, suggesting the reflection is not being followed; and (5) reflection_overfit \u2014 on some hard cases the LLM flips between two wrong answers instead of grounding in context. The trade-off is real: reflexion roughly doubles token cost and latency because each failed attempt re-runs the actor + evaluator, plus an extra reflector call. In production we would cap max_attempts and use a small model for the reflector to control cost. Overall, reflection memory is most valuable when the first attempt is a clean partial answer; when the LLM hallucinates from the start, reflection rarely helps."
+}

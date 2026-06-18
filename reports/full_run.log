@@ -1,0 +1,4 @@
+Loaded 105 examples from data/test_100plus.json
+Running ReAct agent (workers=4)...
+  ... 10/105 done
+  ... 20/105 done
